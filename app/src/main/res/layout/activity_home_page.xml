@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomePage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        >
+        
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:padding="10dp"
+            android:src="@drawable/menu"></ImageView>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center|start"
+            android:text="Home"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"></ImageView>
+    </LinearLayout>
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:queryHint="Search Here"
+        android:iconifiedByDefault="false">
+
+
+    </SearchView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="20dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order with prescription"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:text="Upload a prescription and tell us \n what you need. We do the rest!"
+            android:textSize="15dp"></TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Order now"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#083E3E"></Button>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_marginRight="2dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/prescription" />
+
+
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Popular categories"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"></TextView>
+
+
+  <HorizontalScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+
+      <LinearLayout
+          android:padding="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <ImageView
+              android:id="@+id/imageView3"
+              android:layout_width="match_parent"
+              android:layout_height="120dp"
+              app:srcCompat="@drawable/devices" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Healthcare devices"
+              android:textColor="@color/black"
+              android:layout_marginLeft="20dp"
+              android:textSize="17dp"/>
+
+      </LinearLayout>
+
+          <LinearLayout
+              android:padding="15dp"
+              android:layout_marginStart="10dp"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <ImageView
+                  android:id="@+id/imageView4"
+                  android:layout_width="match_parent"
+                  android:layout_height="120dp"
+                  app:srcCompat="@drawable/baby" />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Baby care products"
+                  android:textColor="@color/black"
+                  android:layout_marginLeft="20dp"
+                  android:textSize="17dp"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:padding="15dp"
+              android:layout_marginStart="10dp"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <ImageView
+                  android:id="@+id/imageView5"
+                  android:layout_width="match_parent"
+                  android:layout_height="120dp"
+                  app:srcCompat="@drawable/himalaya" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Skincare products"
+                  android:textColor="@color/black"
+                  android:layout_marginLeft="20dp"
+                  android:textSize="17dp"/>
+
+
+
+          </LinearLayout>
+          <LinearLayout
+              android:padding="15dp"
+              android:layout_marginStart="10dp"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <ImageView
+                  android:id="@+id/imageView6"
+                  android:layout_width="match_parent"
+                  android:layout_height="120dp"
+                  app:srcCompat="@drawable/elder" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Elderly care"
+                  android:textColor="@color/black"
+                  android:layout_marginLeft="20dp"
+                  android:textSize="15dp"/>
+
+          </LinearLayout>
+          <LinearLayout
+              android:padding="15dp"
+              android:layout_marginStart="10dp"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <ImageView
+                  android:id="@+id/imageView7"
+                  android:layout_width="match_parent"
+                  android:layout_height="120dp"
+                  app:srcCompat="@drawable/diabetic" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Diabetes care"
+                  android:textColor="@color/black"
+                  android:layout_marginLeft="20dp"
+                  android:textSize="17dp"/>
+
+          </LinearLayout>
+          <LinearLayout
+              android:padding="15dp"
+              android:layout_marginStart="10dp"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <ImageView
+                  android:id="@+id/imageView8"
+                  android:layout_width="match_parent"
+                  android:layout_height="120dp"
+                  app:srcCompat="@drawable/horlicks" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Nutritional drinks"
+                  android:textColor="@color/black"
+                  android:layout_marginLeft="20dp"
+                  android:textSize="17dp"/>
+
+          </LinearLayout>
+      </LinearLayout>
+  </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E3E0E0"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Making healthcare Understandable,\nAccessible and Affordable"
+            android:textSize="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#3C3532"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr.PHARMA\nMEDICALS AND CLINIC\nManiyur"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"/>
+    </LinearLayout>
+</LinearLayout>
+

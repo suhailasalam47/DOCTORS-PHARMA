@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityHome">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        app:srcCompat="@drawable/medicine_img"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="15dp"
+        android:text="\t\t\t\t\t\t\tGet The Fastest\nDelivery Medicine For You "
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Order Medicine and get delivery in the \n\t\t\t\t\t\tfastest time in the town" />
+
+    <Button
+        android:id="@+id/startbutton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Get Started"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#083E3E"/>
+</LinearLayout>
